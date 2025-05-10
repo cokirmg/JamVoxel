@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -17,26 +18,36 @@ public class PlayerController : MonoBehaviour
     private GameObject objectAtached;
     private GameObject gameManager;
     private bool zoneToDrop = false;
-
+    private bool blockControls = true;
+    private bool sleeping = true;
     // Añadimos la variable para almacenar el objeto interactuable
     private IInteractable currentInteractable = null;
 
+    [SerializeField]
+    private GameObject FeedbackInteract;
+
     void Start()
     {
+        FeedbackInteract.GetComponent<Animation>().Play("Animation feedback");
+        FeedbackInteract.SetActive(true);
         anim = GetComponent<Animator>();
         gameManager = GameObject.Find("GameManager");
     }
 
     void Update()
     {
-        // Movimiento
-        float direction = invertControls ? -1f : 1f;
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed * direction;
+        if (!blockControls)
+        {
+            // Movimiento
+            float direction = invertControls ? -1f : 1f;
+            horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed * direction;
+        }
+        
 
         anim.SetBool("Andar", Input.GetAxisRaw("Horizontal") != 0);
 
         // Si se presiona la tecla E, interactuamos
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && !sleeping)
         {
             anim.SetTrigger("Interact");
 
@@ -62,6 +73,14 @@ public class PlayerController : MonoBehaviour
                 currentInteractable.Interact();
             }
         }
+        else if (Input.GetKeyDown(KeyCode.E) && sleeping)
+        {
+            anim.SetTrigger("sleeping");
+            sleeping = false;
+            blockControls = false;
+            this.gameObject.GetComponent<Rigidbody2D>().constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+            FeedbackInteract.SetActive(false);
+        }
     }
 
     void FixedUpdate()
@@ -85,6 +104,7 @@ public class PlayerController : MonoBehaviour
             {
                 currentInteractable = interactable; // Guardamos el objeto interactuable
             }
+            FeedbackInteract.SetActive(true);
         }
     }
 
@@ -103,6 +123,8 @@ public class PlayerController : MonoBehaviour
             {
                 currentInteractable = null; // Limpiamos la referencia
             }
+
+            FeedbackInteract.SetActive(false);
         }
     }
 
@@ -112,11 +134,15 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("zoneToDrop") && objectPicked)
         {
             zoneToDrop = true;
+            
         }
         else
         {
             zoneToDrop = false;
+            
         }
     }
+
+    
 }
 
