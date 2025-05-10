@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
@@ -24,11 +25,11 @@ public class Shower : MonoBehaviour
     [SerializeField]
     public ProgressBar progressBar;
 
-    public IntPair[] values = new IntPair[]
+    public IntPair[] valuesMarck = new IntPair[]
     {
         new IntPair(60, 80),
-        new IntPair(20, 50),
-        new IntPair(70, 90)
+        new IntPair(30, 50),
+        new IntPair(50, 60)
     };
 
     private int marckBegin = 60;
@@ -46,10 +47,10 @@ public class Shower : MonoBehaviour
 
     private bool SetStatus()
     {
-        if (values.Length != 0 && showerIndex < values.Length) 
+        if (valuesMarck.Length != 0 && showerIndex < valuesMarck.Length) 
         {
-            marckBegin = values[showerIndex].begin;
-            marckEnd = values[showerIndex].end;
+            marckBegin = valuesMarck[showerIndex].begin;
+            marckEnd = valuesMarck[showerIndex].end;
             progressBar.SetMarck(showerIndex);
             showerIndex++;
 
@@ -77,15 +78,32 @@ public class Shower : MonoBehaviour
 
     public void OnKeyReleased()
     {
-        // Aquí pones la acción que quieres hacer al soltar la tecla
-        isKeyPressed = false;  // Detiene el contador
+        isKeyPressed = false;
 
         if (isValid())
         {
-            if (!SetStatus()) 
-            {
-                Debug.Log("FINNNNNNNNNNN");
-            }
+            //WAIT
+            StartCoroutine(Espera());
+           
+        }
+        else 
+        { 
+            currentValue = 0;
+            progressBar.SetFillValue(totalValue, currentValue);
+        }
+        
+    }
+
+    IEnumerator Espera()
+    {
+        progressBar.SetFillValue(totalValue, totalValue);
+
+        //TODO SONIDITO 
+        yield return new WaitForSeconds(1.0f);
+        if (!SetStatus())
+        {
+            //TODO CAMBIO DE ESCENAAAA 
+            Debug.Log("FINNNNNNNNNNN");
         }
         currentValue = 0;
         progressBar.SetFillValue(totalValue, currentValue);
