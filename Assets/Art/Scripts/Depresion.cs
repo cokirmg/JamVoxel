@@ -6,6 +6,7 @@ public class Depresion : MonoBehaviour
     private float runSpeed = 0f;
     private bool depresion = false;
     private int x = 0;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -43,6 +44,8 @@ public class Depresion : MonoBehaviour
             addSpeed(21);
         }
         this.gameObject.GetComponent<Animator>().SetBool("Andar", true);
+    }else{
+        this.gameObject.GetComponent<Animator>().SetBool("Andar", false);
     }
 
     lessSpeed();
