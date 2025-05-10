@@ -283,6 +283,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1597,7 +1610,66 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tile_wall_0: -102410067342046082
+      tile_wall_1: 3015586045791148928
+      tile_wall_10: 6100112964343472077
+      tile_wall_11: 592306943551577833
+      tile_wall_12: 5103940314414662587
+      tile_wall_13: 3393191583725546955
+      tile_wall_14: -7189702510511992103
+      tile_wall_15: 6893337227314309874
+      tile_wall_16: -6420095375144005900
+      tile_wall_17: -7748626815908343414
+      tile_wall_18: -5719181836145375388
+      tile_wall_19: -2719176845903166653
+      tile_wall_2: 67245484346242396
+      tile_wall_20: 1885274766074256140
+      tile_wall_21: -6689107037399646899
+      tile_wall_22: 8282448297318021192
+      tile_wall_23: -8037336242969275820
+      tile_wall_24: 43472827298135655
+      tile_wall_25: -6915472986840078369
+      tile_wall_26: -4205439244394405140
+      tile_wall_27: -8646900771836981437
+      tile_wall_28: 970392394908425836
+      tile_wall_29: -1932446765567351836
+      tile_wall_3: -3607827533525170472
+      tile_wall_30: -6530866444463947098
+      tile_wall_31: -6135751449355815230
+      tile_wall_32: -5782150354936560818
+      tile_wall_33: -841588917728365982
+      tile_wall_34: -6235140409610887881
+      tile_wall_35: 8176417189424758055
+      tile_wall_36: 3090713913706392311
+      tile_wall_37: -7297382642354533994
+      tile_wall_38: -4173005219730685853
+      tile_wall_39: -6427969625525840253
+      tile_wall_4: 8132815295547558860
+      tile_wall_40: 1068515878963516152
+      tile_wall_41: -7376353897305411611
+      tile_wall_42: 3318686604336351951
+      tile_wall_43: 7187270655135070554
+      tile_wall_44: -3959159528267316944
+      tile_wall_45: -3786550360238542531
+      tile_wall_46: 9048496472564352518
+      tile_wall_47: 5166911569128283822
+      tile_wall_48: 2766291373399048165
+      tile_wall_49: 4635491998803607851
+      tile_wall_5: 2801031273911355511
+      tile_wall_50: 5010324646351838649
+      tile_wall_51: -879123840856112464
+      tile_wall_52: 6037092319489490733
+      tile_wall_53: 1679369695407915700
+      tile_wall_54: -1659423115087482082
+      tile_wall_55: 8536256695755216840
+      tile_wall_56: 8942602652253572389
+      tile_wall_57: 6370605771939373695
+      tile_wall_58: -4572057114834992078
+      tile_wall_6: -6869418416978688397
+      tile_wall_7: -1773343646584005512
+      tile_wall_8: 7580609408521797830
+      tile_wall_9: 7618773657841899553
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

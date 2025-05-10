@@ -211,6 +211,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -997,7 +1010,42 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tile_village_house_0: -3661868257650234701
+      tile_village_house_1: 9139306796437520124
+      tile_village_house_10: -7380108548572921241
+      tile_village_house_11: 4192241431296857419
+      tile_village_house_12: -3050122029765665156
+      tile_village_house_13: -2684888892435509328
+      tile_village_house_14: -7454878166401950675
+      tile_village_house_15: 4277990650536704463
+      tile_village_house_16: 2635209008880891338
+      tile_village_house_17: -8368983157384699722
+      tile_village_house_18: -3170198646059517895
+      tile_village_house_19: 7354208842007781587
+      tile_village_house_2: -9100635402859674617
+      tile_village_house_20: -4096568106384139510
+      tile_village_house_21: -8635367866303302226
+      tile_village_house_22: 244114916797535490
+      tile_village_house_23: 2616674153142031042
+      tile_village_house_24: 7346694045422403807
+      tile_village_house_25: -564901393907028998
+      tile_village_house_26: 6324369286667385373
+      tile_village_house_27: -7870181573259325480
+      tile_village_house_28: 9093051168397158762
+      tile_village_house_29: 2447590161238771793
+      tile_village_house_3: 2048810115887694902
+      tile_village_house_30: 3774786362245461012
+      tile_village_house_31: 3960429906245781948
+      tile_village_house_32: 989053092844116424
+      tile_village_house_33: -6163477281761691586
+      tile_village_house_34: 4122013482197142104
+      tile_village_house_4: 848593139363713000
+      tile_village_house_5: 7758952127323803776
+      tile_village_house_6: -5877035834723186179
+      tile_village_house_7: 2250996127423349650
+      tile_village_house_8: 8313661482010104841
+      tile_village_house_9: -6519008263509801481
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

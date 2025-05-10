@@ -133,6 +133,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -347,7 +360,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tile_village_objects_0: 9090745912891169696
+      tile_village_objects_1: -7965433409968044157
+      tile_village_objects_2: -1530849359189400916
+      tile_village_objects_3: -4384188796586164985
+      tile_village_objects_4: -4578054272413378295
+      tile_village_objects_5: 2333959185502754984
+      tile_village_objects_6: -7325290321683544138
+      tile_village_objects_7: -7122584548587975516
+      tile_village_objects_8: 949462024438346614
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
