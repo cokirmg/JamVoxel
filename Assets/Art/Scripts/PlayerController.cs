@@ -18,6 +18,9 @@ public class PlayerController : MonoBehaviour
     private GameObject gameManager;
     private bool zoneToDrop = false;
 
+    // Añadimos la variable para almacenar el objeto interactuable
+    private IInteractable currentInteractable = null;
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -26,15 +29,18 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        // Movimiento
         float direction = invertControls ? -1f : 1f;
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed * direction;
 
         anim.SetBool("Andar", Input.GetAxisRaw("Horizontal") != 0);
 
+        // Si se presiona la tecla E, interactuamos
         if (Input.GetKeyDown(KeyCode.E))
         {
             anim.SetTrigger("Interact");
 
+            // Si tenemos un objeto para recoger, lo recogemos
             if (objectToPickUp != null)
             {
                 objectToPickUp.transform.SetParent(pickUpPoint);
@@ -44,45 +50,73 @@ public class PlayerController : MonoBehaviour
                 objectAtached = objectToPickUp;
                 objectToPickUp = null;
             }
+            // Si estamos en una zona para dejar el objeto, lo dejamos
             if (zoneToDrop)
             {
                 gameManager.GetComponent<PickAndDropManager>().avanceNivel();
                 Destroy(objectAtached);
             }
+            // Si tenemos un objeto interactuable, lo interactuamos
+            if (currentInteractable != null)
+            {
+                currentInteractable.Interact();
+            }
         }
-
     }
 
     void FixedUpdate()
     {
         controller.Move(horizontalMove * Time.fixedDeltaTime);
     }
+
+    // Al entrar en el trigger de un objeto que se puede recoger
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Object"))
         {
             objectToPickUp = other.gameObject;
         }
+
+        // Al entrar en el trigger de un objeto interactuable
+        if (other.CompareTag("Interact"))
+        {
+            IInteractable interactable = other.GetComponent<IInteractable>();
+            if (interactable != null)
+            {
+                currentInteractable = interactable; // Guardamos el objeto interactuable
+            }
+        }
     }
 
+    // Al salir del trigger de un objeto que se puede recoger
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Object") && other.gameObject == objectToPickUp)
         {
             objectToPickUp = null;
         }
+
+        // Al salir de un objeto interactuable
+        if (other.CompareTag("Interact"))
+        {
+            if (other.GetComponent<IInteractable>() == currentInteractable)
+            {
+                currentInteractable = null; // Limpiamos la referencia
+            }
+        }
     }
 
+    // Para las zonas de drop de objetos
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("zoneToDrop") && objectPicked)
         {
             zoneToDrop = true;
         }
-
         else
         {
             zoneToDrop = false;
         }
-        }
     }
+}
+
