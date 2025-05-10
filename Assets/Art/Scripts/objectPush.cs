@@ -16,10 +16,10 @@ public class objectPush : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
        
-            if (Input.GetMouseButtonDown(0)) // clic izquierdo
+            if (Input.GetKeyDown(KeyCode.E)) // clic izquierdo
             {
                 Vector2 posicionMouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 RaycastHit2D hit = Physics2D.Raycast(posicionMouse, Vector2.zero);
@@ -33,5 +33,5 @@ public class objectPush : MonoBehaviour
                 }
             }
         
-    }
+    }*/
 }

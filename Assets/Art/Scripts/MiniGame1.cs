@@ -21,7 +21,13 @@ public class MiniGame1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+         if (Input.GetKeyDown(KeyCode.E)){
+            GameObject circle = GameObject.Find("Circle(Clone)");
+            if (circle != null)
+            {
+                Destroy(circle);
+            }
+         }
     }
     public void pushingObject()
     {
@@ -36,14 +42,14 @@ public class MiniGame1 : MonoBehaviour
     {
         if (!minigameEnded)
         {
-            if (objectsSpawned <= 8)
+            if (objectsSpawned <= 30)
             {
                 Transform spawnTransform = spawnPoints[Random.Range(0, spawnPoints.Length)];
                 Instantiate(spawnGameObject, spawnTransform.position, Quaternion.identity);
                 objectsSpawned++;
             }
             
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.1f);
             StartCoroutine(spawnObjects());
         }
         else
