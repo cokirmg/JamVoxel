@@ -18,7 +18,7 @@ public class CamTrigger : MonoBehaviour
             camControl.minPos = newCamPos;
             camControl.maxPos = newCamPos;
 
-            //other.transform.position = newPlayerPos;
+            other.transform.position = newPlayerPos;
 
         }
     }
