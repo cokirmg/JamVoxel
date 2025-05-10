@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Fase0.unity
     guid: 938ee12b5d3179341a223ae1824bf3be
   - enabled: 1
-    path: Assets/Scenes/Fase2Ira.unity
-    guid: 7a8937832b8a90e45929a3eb32edf158
-  - enabled: 1
     path: Assets/Scenes/Fase1Negacion.unity
     guid: c5a49def9a143f243a1c324675e11e6f
+  - enabled: 1
+    path: Assets/Scenes/Fase2Ira.unity
+    guid: 7a8937832b8a90e45929a3eb32edf158
   - enabled: 1
     path: "Assets/Scenes/Fase3Negociaci\xF3n.unity"
     guid: 772bb4e3f498fed49ae03e11edd561b6
