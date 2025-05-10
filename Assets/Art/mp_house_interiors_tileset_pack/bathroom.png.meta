@@ -747,7 +747,32 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bathroom_0: -3521427111303423466
+      bathroom_1: 6983358275279283047
+      bathroom_10: -4309067922572259023
+      bathroom_11: -4719920441953140294
+      bathroom_12: 424640374056618819
+      bathroom_13: 3360226103960135051
+      bathroom_14: -9174244067029899023
+      bathroom_15: -150545708790703871
+      bathroom_16: -196028476582618900
+      bathroom_17: 2889209925469297122
+      bathroom_18: -2141553197332089939
+      bathroom_19: -5807677388573095222
+      bathroom_2: 1169091165138729141
+      bathroom_20: 2235141617128906387
+      bathroom_21: 4460989859543285799
+      bathroom_22: -573019512453249434
+      bathroom_23: 4486309160106536113
+      bathroom_24: 1822452513176793564
+      bathroom_3: 3300606671451264670
+      bathroom_4: 3155690606720968461
+      bathroom_5: -3116974730507115604
+      bathroom_6: 2983476358436010028
+      bathroom_7: 2797578448776851711
+      bathroom_8: 180818828194593506
+      bathroom_9: -5181877912138065124
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

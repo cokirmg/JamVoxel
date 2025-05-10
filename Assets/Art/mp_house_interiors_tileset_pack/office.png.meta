@@ -522,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      office_0: 4726522335782357095
+      office_1: -2063119410429711812
+      office_10: -2804444419145914996
+      office_11: 5733635913342364750
+      office_12: 6616607262994995029
+      office_13: -103504888457580276
+      office_14: 8625065222492617249
+      office_15: 5557665860244518938
+      office_2: 3241429223417838038
+      office_3: 32504679054095329
+      office_4: 7116133925296819680
+      office_5: 1460095345990884287
+      office_6: 1362712644197807595
+      office_7: -7664057763647390325
+      office_8: -7921349510803149561
+      office_9: -6911096837670808554
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

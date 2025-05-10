@@ -672,7 +672,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kids_bedroom_0: -5102807045355138418
+      kids_bedroom_1: 361577364416352433
+      kids_bedroom_10: 5593032786380620825
+      kids_bedroom_11: 1081896882126274696
+      kids_bedroom_12: -521603014617140644
+      kids_bedroom_13: 6658370470198559868
+      kids_bedroom_14: 2309124550240136207
+      kids_bedroom_15: 5767619176154210809
+      kids_bedroom_16: -1591906691492772054
+      kids_bedroom_17: 5263798422899494961
+      kids_bedroom_18: 8960368180383288540
+      kids_bedroom_19: 5808547185454887233
+      kids_bedroom_2: -6878073835842117431
+      kids_bedroom_20: 618588131168086414
+      kids_bedroom_21: -3786270979961017125
+      kids_bedroom_3: -4543584229877762469
+      kids_bedroom_4: 573016873379015289
+      kids_bedroom_5: -7412163561026336494
+      kids_bedroom_6: 8926496083595585323
+      kids_bedroom_7: -6183913526275642266
+      kids_bedroom_8: -7093164453104728794
+      kids_bedroom_9: 5227814552294213847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

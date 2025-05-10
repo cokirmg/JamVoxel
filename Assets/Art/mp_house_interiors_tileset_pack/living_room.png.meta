@@ -697,7 +697,30 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      living_room_0: -8415228540373000366
+      living_room_1: -8947774740503648182
+      living_room_10: -3447800856851824320
+      living_room_11: -5807609704268424080
+      living_room_12: 3237430614342385710
+      living_room_13: 8453029677261203602
+      living_room_14: 4630994293734654334
+      living_room_15: -1605864383984219427
+      living_room_16: 729481270144438693
+      living_room_17: 9133062393889166648
+      living_room_18: -250416613698694230
+      living_room_19: -3909958982399486058
+      living_room_2: -5238636795809225942
+      living_room_20: 3369408645668996741
+      living_room_21: -3537024016113436901
+      living_room_22: 8925247351232112038
+      living_room_3: 8869784277332793331
+      living_room_4: -5169877419062004513
+      living_room_5: -553215250245709320
+      living_room_6: 5355731655343586607
+      living_room_7: -4912125907182077593
+      living_room_8: -2577421095057998873
+      living_room_9: -8175003796463758860
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

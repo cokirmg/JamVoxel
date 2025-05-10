@@ -372,7 +372,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      parents_room_0: -3671279286013142774
+      parents_room_1: 3909216352087621336
+      parents_room_2: 6561884231332137730
+      parents_room_3: -914014120986081838
+      parents_room_4: 903596343344339674
+      parents_room_5: -2596105947793678236
+      parents_room_6: -5124275260232422789
+      parents_room_7: 3384747987404971349
+      parents_room_8: -1826497636901144580
+      parents_room_9: -6908803461525810435
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

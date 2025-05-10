@@ -722,7 +722,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      garage_0: 3500446970079045336
+      garage_1: -2356336596638827033
+      garage_10: -1821677252667728309
+      garage_11: -61066718953411939
+      garage_12: 3818872506554814088
+      garage_13: 435205915758997816
+      garage_14: 5422728201962008468
+      garage_15: 6506154724160773338
+      garage_16: -2025060425965024092
+      garage_17: -214230147619672949
+      garage_18: -864213256223865122
+      garage_19: 5381020553357417501
+      garage_2: 4741457463094663151
+      garage_20: -2549135047925133932
+      garage_21: 6108645001026410967
+      garage_22: -7760156010146361475
+      garage_23: -1122745026451290554
+      garage_3: -5456391403289432790
+      garage_4: 3372770363380270118
+      garage_5: 5683897993643898474
+      garage_6: -5871582386854785313
+      garage_7: 855569174200726757
+      garage_8: 4115708687171802741
+      garage_9: 8970633547086719020
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

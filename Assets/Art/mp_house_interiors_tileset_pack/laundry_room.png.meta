@@ -597,7 +597,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      laundry_room_0: 5412278919744770031
+      laundry_room_1: 4141167701598946904
+      laundry_room_10: -2340880275744038340
+      laundry_room_11: -730124545471306444
+      laundry_room_12: -6891588659078921075
+      laundry_room_13: 8316534722249062819
+      laundry_room_14: -7617271850161836520
+      laundry_room_15: -3231700983364421966
+      laundry_room_16: -567953751353582801
+      laundry_room_17: 4310452205253675473
+      laundry_room_18: 2206153711827522776
+      laundry_room_2: -7083221389952366055
+      laundry_room_3: -3548460945249107728
+      laundry_room_4: -2348804086471697455
+      laundry_room_5: 3161025367368346500
+      laundry_room_6: 4018271931779926755
+      laundry_room_7: -3676186928589000923
+      laundry_room_8: -7104468063000616128
+      laundry_room_9: 2678249845701857501
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
