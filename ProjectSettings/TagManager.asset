@@ -7,6 +7,7 @@ TagManager:
   - objectToDestroy
   - Object
   - zoneToDrop
+  - Interact
   layers:
   - Default
   - TransparentFX
