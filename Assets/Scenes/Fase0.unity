@@ -204,6 +204,43 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 85718095}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &85718094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 85718095}
+  m_Layer: 0
+  m_Name: Bathroom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &85718095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85718094}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1504758615}
+  - {fileID: 1372631139}
+  - {fileID: 707775107}
+  - {fileID: 51192770}
+  - {fileID: 761573769}
+  - {fileID: 257858384}
   m_Father: {fileID: 1114710066}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &91778056
@@ -369,7 +406,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 85718095}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &297464521
 GameObject:
@@ -382,7 +419,7 @@ GameObject:
   - component: {fileID: 297464523}
   - component: {fileID: 297464522}
   m_Layer: 0
-  m_Name: kitchen_3
+  m_Name: Fridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -456,7 +493,7 @@ Transform:
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 798591496}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &356169324
 GameObject:
@@ -469,7 +506,7 @@ GameObject:
   - component: {fileID: 356169326}
   - component: {fileID: 356169325}
   m_Layer: 0
-  m_Name: kitchen_13
+  m_Name: Microwave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -543,7 +580,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 798591496}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &425472968
 GameObject:
@@ -682,6 +719,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &432593924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 432593925}
+  m_Layer: 0
+  m_Name: Bedroom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &432593925
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432593924}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.987173, y: -4.4895306, z: -1.414601}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1817454551}
+  - {fileID: 862042257}
+  - {fileID: 1734758332}
+  - {fileID: 868872322}
+  m_Father: {fileID: 1114710066}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &647052207
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,7 +765,7 @@ GameObject:
   - component: {fileID: 647052209}
   - component: {fileID: 647052208}
   m_Layer: 0
-  m_Name: kitchen_24
+  m_Name: Dishes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -767,7 +839,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 798591496}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &675765156
 GameObject:
@@ -854,7 +926,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 818231525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &707775105
 GameObject:
@@ -941,7 +1013,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 85718095}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &761573767
 GameObject:
@@ -1028,7 +1100,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 85718095}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &769444087
 GameObject:
@@ -1041,7 +1113,7 @@ GameObject:
   - component: {fileID: 769444089}
   - component: {fileID: 769444088}
   m_Layer: 0
-  m_Name: kitchen_32
+  m_Name: Dishwasher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1115,7 +1187,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 798591496}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &782737553
 GameObject:
@@ -1128,7 +1200,7 @@ GameObject:
   - component: {fileID: 782737555}
   - component: {fileID: 782737554}
   m_Layer: 0
-  m_Name: kitchen_31
+  m_Name: Oven
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1202,6 +1274,82 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 798591496}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &798591495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 798591496}
+  m_Layer: 0
+  m_Name: Kitchen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &798591496
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798591495}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 297464523}
+  - {fileID: 782737555}
+  - {fileID: 769444089}
+  - {fileID: 1872190379}
+  - {fileID: 1365013111}
+  - {fileID: 1563807353}
+  - {fileID: 356169326}
+  - {fileID: 647052209}
+  m_Father: {fileID: 1114710066}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &818231524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 818231525}
+  m_Layer: 0
+  m_Name: LivingRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &818231525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818231524}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1324901804}
+  - {fileID: 675765158}
+  - {fileID: 2036411911}
+  - {fileID: 970197917}
+  - {fileID: 877281894}
+  - {fileID: 1645834820}
   m_Father: {fileID: 1114710066}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &862042255
@@ -1215,7 +1363,7 @@ GameObject:
   - component: {fileID: 862042257}
   - component: {fileID: 862042256}
   m_Layer: 0
-  m_Name: parents_room_5
+  m_Name: Wardrobe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1285,11 +1433,11 @@ Transform:
   m_GameObject: {fileID: 862042255}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.944356, y: -4.0797434, z: 0.0870332}
+  m_LocalPosition: {x: -1.9571829, y: 0.40978742, z: 1.5016341}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 432593925}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &868872320
 GameObject:
@@ -1302,7 +1450,7 @@ GameObject:
   - component: {fileID: 868872322}
   - component: {fileID: 868872321}
   m_Layer: 0
-  m_Name: parents_room_6
+  m_Name: Commode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1372,11 +1520,11 @@ Transform:
   m_GameObject: {fileID: 868872320}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.287905, y: -4.499164, z: 0.0870332}
+  m_LocalPosition: {x: -9.300732, y: -0.009633303, z: 1.5016341}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 432593925}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &877281892
 GameObject:
@@ -1463,7 +1611,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 818231525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &970197915
 GameObject:
@@ -1550,7 +1698,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 818231525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1114710065
 GameObject:
@@ -1581,30 +1729,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1324901804}
-  - {fileID: 675765158}
-  - {fileID: 2036411911}
-  - {fileID: 970197917}
-  - {fileID: 877281894}
-  - {fileID: 297464523}
-  - {fileID: 782737555}
-  - {fileID: 769444089}
-  - {fileID: 1872190379}
-  - {fileID: 1365013111}
-  - {fileID: 1563807353}
-  - {fileID: 356169326}
-  - {fileID: 647052209}
-  - {fileID: 1817454551}
-  - {fileID: 862042257}
-  - {fileID: 1734758332}
-  - {fileID: 868872322}
-  - {fileID: 1504758615}
-  - {fileID: 1372631139}
-  - {fileID: 707775107}
-  - {fileID: 51192770}
-  - {fileID: 761573769}
-  - {fileID: 257858384}
-  - {fileID: 1645834820}
+  - {fileID: 818231525}
+  - {fileID: 85718095}
+  - {fileID: 798591496}
+  - {fileID: 432593925}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1246145167
@@ -1806,7 +1934,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 818231525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1365013109
 GameObject:
@@ -1819,7 +1947,7 @@ GameObject:
   - component: {fileID: 1365013111}
   - component: {fileID: 1365013110}
   m_Layer: 0
-  m_Name: kitchen_5
+  m_Name: Things
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1893,7 +2021,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 798591496}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1372631137
 GameObject:
@@ -1980,7 +2108,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 85718095}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1504758613
 GameObject:
@@ -2067,7 +2195,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 85718095}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1563807351
 GameObject:
@@ -2080,7 +2208,7 @@ GameObject:
   - component: {fileID: 1563807353}
   - component: {fileID: 1563807352}
   m_Layer: 0
-  m_Name: kitchen_4
+  m_Name: Shelter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2154,7 +2282,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 798591496}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1645834818
 GameObject:
@@ -2241,7 +2369,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 818231525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1734758330
 GameObject:
@@ -2254,7 +2382,7 @@ GameObject:
   - component: {fileID: 1734758332}
   - component: {fileID: 1734758331}
   m_Layer: 0
-  m_Name: parents_room_0
+  m_Name: Painting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2324,11 +2452,11 @@ Transform:
   m_GameObject: {fileID: 1734758330}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.204023, y: -3.0204659, z: 0.0870332}
+  m_LocalPosition: {x: -9.21685, y: 1.469065, z: 1.5016341}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 432593925}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1817454549
 GameObject:
@@ -2341,7 +2469,7 @@ GameObject:
   - component: {fileID: 1817454551}
   - component: {fileID: 1817454550}
   m_Layer: 0
-  m_Name: parents_room_3
+  m_Name: Bed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2411,11 +2539,11 @@ Transform:
   m_GameObject: {fileID: 1817454549}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.104357, y: -4.550466, z: 0.0870332}
+  m_LocalPosition: {x: -15.117184, y: -0.06093526, z: 1.5016341}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 432593925}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1839615873
 GameObject:
@@ -6559,7 +6687,7 @@ GameObject:
   - component: {fileID: 1872190379}
   - component: {fileID: 1872190378}
   m_Layer: 0
-  m_Name: kitchen_30
+  m_Name: WaterDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6633,7 +6761,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 798591496}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2036411909
 GameObject:
@@ -6720,7 +6848,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114710066}
+  m_Father: {fileID: 818231525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
