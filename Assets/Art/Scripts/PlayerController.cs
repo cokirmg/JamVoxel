@@ -11,12 +11,17 @@ public class PlayerController : MonoBehaviour
     public bool invertControls = false;
 
     private GameObject objectToPickUp = null;
-
+    private bool objectPicked = false;
     [SerializeField]
     private Transform pickUpPoint;
+    private GameObject objectAtached;
+    private GameObject gameManager;
+    private bool zoneToDrop = false;
+
     void Start()
     {
         anim = GetComponent<Animator>();
+        gameManager = GameObject.Find("GameManager");
     }
 
     void Update()
@@ -35,9 +40,17 @@ public class PlayerController : MonoBehaviour
                 objectToPickUp.transform.SetParent(pickUpPoint);
                 objectToPickUp.transform.localPosition = Vector3.zero;
                 objectToPickUp.GetComponent<SpriteRenderer>().sortingOrder = 5;
+                objectPicked = true;
+                objectAtached = objectToPickUp;
                 objectToPickUp = null;
             }
+            if (zoneToDrop)
+            {
+                gameManager.GetComponent<PickAndDropManager>().avanceNivel();
+                Destroy(objectAtached);
+            }
         }
+
     }
 
     void FixedUpdate()
@@ -59,4 +72,17 @@ public class PlayerController : MonoBehaviour
             objectToPickUp = null;
         }
     }
-}
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("zoneToDrop") && objectPicked)
+        {
+            zoneToDrop = true;
+        }
+
+        else
+        {
+            zoneToDrop = false;
+        }
+        }
+    }
