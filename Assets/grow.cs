@@ -20,7 +20,6 @@ public class grow : MonoBehaviour, IInteractable
     }
 
     public void Interact(){
-        Debug.Log("dnfkjuiaefu");
         if(controller.objectPicked){
             StartCoroutine(grower());
         }
