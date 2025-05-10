@@ -7,7 +7,7 @@ public class PickAndDropManager : MonoBehaviour
     [SerializeField]
     private int conteoDeseado;
     private GameObject player;
-
+    private GameObject sceneManager;
     public void avanceNivel()
     {
         conteo++;
@@ -16,6 +16,8 @@ public class PickAndDropManager : MonoBehaviour
         {
             //TODO cambio de escena
             Debug.Log("TODO cambio de escena");
+            sceneManager = GameObject.Find("SceneManager");
+            sceneManager.GetComponent<SceneController2>().NextLevel();
         }
         else if (SceneManager.GetActiveScene().buildIndex == 2)
         {

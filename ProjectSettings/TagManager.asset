@@ -8,6 +8,7 @@ TagManager:
   - Object
   - zoneToDrop
   - Interact
+  - SceneManager
   layers:
   - Default
   - TransparentFX

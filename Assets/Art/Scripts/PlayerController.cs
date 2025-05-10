@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -36,17 +37,27 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (!blockControls)
+        
+        if (!blockControls )
         {
             // Movimiento
             float direction = invertControls ? -1f : 1f;
             horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed * direction;
+            
         }
-        
+        if(SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            anim.SetTrigger("sleeping");
+            sleeping = false;
+            blockControls = false;
+            this.gameObject.GetComponent<Rigidbody2D>().constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+            FeedbackInteract.SetActive(false);
+        }
 
         anim.SetBool("Andar", Input.GetAxisRaw("Horizontal") != 0);
 
         // Si se presiona la tecla E, interactuamos
+
         if (Input.GetKeyDown(KeyCode.E) && !sleeping)
         {
             anim.SetTrigger("Interact");
