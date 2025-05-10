@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 4734833704316993225}
   - component: {fileID: 7941578602832197682}
   - component: {fileID: 6119998261175455644}
+  - component: {fileID: 2646793744150651528}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -217,7 +218,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -139171613
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: -3927913518680497933, guid: 9f0cbf4aa9e46d1488da758a7119bb0a, type: 3}
   m_Color: {r: 0.6039216, g: 0.6039216, b: 0.6039216, a: 1}
@@ -267,7 +268,9 @@ MonoBehaviour:
   controller: {fileID: 4734833704316993225}
   runSpeed: 30
   invertControls: 0
+  objectPicked: 0
   pickUpPoint: {fileID: 3921004289559821854}
+  blockControls: 1
   FeedbackInteract: {fileID: 4162536237979306064}
 --- !u!114 &4734833704316993225
 MonoBehaviour:
@@ -355,3 +358,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.7049458, y: 3.9108088}
   m_EdgeRadius: 0
+--- !u!114 &2646793744150651528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6961864509884564220}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a47910d0765b7cc43a30ec6c7e16dbc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyToDetect: 101
+  shower: {fileID: 0}

@@ -24,6 +24,8 @@ public class Shower : MonoBehaviour
     private float increment = 1;
     [SerializeField]
     public ProgressBar progressBar;
+    [SerializeField]
+    private GameObject cover;
 
     public IntPair[] valuesMarck = new IntPair[]
     {
@@ -102,6 +104,15 @@ public class Shower : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         if (!SetStatus())
         {
+            cover.SetActive(true);
+            GameObject player = GameObject.FindWithTag("Player");
+            if (player != null)
+            {
+                player.GetComponent<PlayerController>().blockControls = false;
+                player.GetComponent<Renderer>().enabled = true;
+                player.GetComponent<PressKey>().enabled = false;
+            }
+
             //TODO CAMBIO DE ESCENAAAA 
             Debug.Log("FINNNNNNNNNNN");
         }
