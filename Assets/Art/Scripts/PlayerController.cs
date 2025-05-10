@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     private bool zoneToDrop = false;
     private bool blockControls = true;
     private bool sleeping = true;
-    // Añadimos la variable para almacenar el objeto interactuable
+    // Aï¿½adimos la variable para almacenar el objeto interactuable
     private IInteractable currentInteractable = null;
 
     [SerializeField]
@@ -70,6 +70,7 @@ public class PlayerController : MonoBehaviour
             // Si tenemos un objeto interactuable, lo interactuamos
             if (currentInteractable != null)
             {
+                Debug.Log("11111111111111111111");
                 currentInteractable.Interact();
             }
         }
