@@ -474,6 +474,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FinalMap
       objectReference: {fileID: 0}
+    - target: {fileID: 3150955708096327034, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: m_TagString
+      value: zoneToDrop
+      objectReference: {fileID: 0}
     - target: {fileID: 3656127535962287053, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

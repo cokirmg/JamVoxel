@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneController : MonoBehaviour
+public class SceneController2 : MonoBehaviour
 {
-    public static SceneController instance;
+    public static SceneController2 instance;
     [SerializeField] Animator animator;
 
     private void Awake()

@@ -6,7 +6,7 @@ public class ChangeScene : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            SceneController.instance.NextLevel();
+            SceneController2.instance.NextLevel();
         }
     }
 }
