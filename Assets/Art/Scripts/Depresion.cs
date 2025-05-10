@@ -37,11 +37,11 @@ public class Depresion : MonoBehaviour
         }
         else if (transform.position.x >= 20.0f && transform.position.x < 26.0f)
         {
-            addSpeed(24);
+            addSpeed(22);
         }
         else
         {
-            addSpeed(21);
+            addSpeed(19);
         }
         this.gameObject.GetComponent<Animator>().SetBool("Andar", true);
     }else{
@@ -66,10 +66,13 @@ public class Depresion : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+       
         if (other.CompareTag("Interact"))
         {
             depresion = true;
             this.gameObject.GetComponent<Animator>().SetBool("depresion", true);
         }
+        
+        
     }
 }

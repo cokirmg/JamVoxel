@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraShake : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class CameraShake : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && SceneManager.GetActiveScene().buildIndex==5)
         {
             ShakeItUp();
         }
@@ -35,13 +36,13 @@ public class CameraShake : MonoBehaviour
             float x = 0f;
             float y = 0f;
 
-            if (player.transform.position.x > -10.0f && transform.position.x < 10.0f){
+            if (player.transform.position.x > -30.0f && transform.position.x < -10.0f){
                 x = Random.Range(-0.1f, 0.1f) * shakeAmount;
                 y = Random.Range(-0.1f, 0.1f) * shakeAmount;
-            }else if (transform.position.x >= 10.0f && transform.position.x < 20.0f){
+            }else if (transform.position.x >= -10.0f && transform.position.x < 10.0f){
                 x = Random.Range(-0.3f, 0.3f) * shakeAmount;
                 y = Random.Range(-0.3f, 0.3f) * shakeAmount;
-            }else if(transform.position.x >= 20.0f && transform.position.x < 26.0f){
+            }else if(transform.position.x >= 10.0f && transform.position.x < 30.0f){
                 x = Random.Range(-0.6f, 0.6f) * shakeAmount;
                 y = Random.Range(-0.6f, 0.6f) * shakeAmount;
             }

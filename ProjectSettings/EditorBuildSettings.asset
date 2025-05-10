@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: "Assets/Scenes/Fase3Negociaci\xF3n.unity"
     guid: 772bb4e3f498fed49ae03e11edd561b6
   - enabled: 1
+    path: Assets/Scenes/Fase4Depresion.unity
+    guid: 64409e1198f38974182ea36ea2d54615
+  - enabled: 1
     path: "Assets/Scenes/Fase5Aceptaci\xF3n.unity"
     guid: 35038f04432218e47a8f044c0e5eea63
   m_configObjects:

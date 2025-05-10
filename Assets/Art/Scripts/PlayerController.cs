@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Transform pickUpPoint;
     private GameObject objectAtached;
+    private GameObject ZonedWhereDropped;
     private GameObject gameManager;
     private bool zoneToDrop = false;
     public bool blockControls = true;
@@ -63,7 +64,7 @@ public class PlayerController : MonoBehaviour
             anim.SetTrigger("Interact");
 
             // Si tenemos un objeto para recoger, lo recogemos
-            if (objectToPickUp != null)
+            if (objectToPickUp != null && !objectPicked)
             {
                 objectToPickUp.transform.SetParent(pickUpPoint);
                 objectToPickUp.transform.localPosition = Vector3.zero;
@@ -73,10 +74,12 @@ public class PlayerController : MonoBehaviour
                 objectToPickUp = null;
             }
             // Si estamos en una zona para dejar el objeto, lo dejamos
-            if (zoneToDrop)
+            if (zoneToDrop && objectPicked)
             {
-                gameManager.GetComponent<PickAndDropManager>().avanceNivel();
                 Destroy(objectAtached);
+                gameManager.GetComponent<PickAndDropManager>().avanceNivel();
+                ZonedWhereDropped.GetComponent<DeactivateZoneToDrop>().DeactivateCollider();
+                objectPicked = false;
             }
             // Si tenemos un objeto interactuable, lo interactuamos
             if (currentInteractable != null)
@@ -146,7 +149,7 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("zoneToDrop") && objectPicked)
         {
             zoneToDrop = true;
-            
+            ZonedWhereDropped = collision.gameObject;
         }
         else
         {
