@@ -5,6 +5,7 @@ public class Depresion : MonoBehaviour
     public float maxSpeed = 40.0f;
     private float runSpeed = 0f;
     private bool depresion = false;
+    private int x = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,25 +21,28 @@ public class Depresion : MonoBehaviour
     {
         if (depresion) return; // No hacer nada si está en depresión
 
+        if(x==0){
         this.gameObject.GetComponent<Animator>().SetTrigger("sleeping");
+        x++;
+        }
 
         if (transform.position.x > -10.0f && transform.position.x < 10.0f)
         {
-            addSpeed(25);
+            addSpeed(30);
         }
         else if (transform.position.x >= 10.0f && transform.position.x < 20.0f)
         {
-            addSpeed(23);
+            addSpeed(27);
         }
         else if (transform.position.x >= 20.0f && transform.position.x < 26.0f)
         {
-            addSpeed(20);
+            addSpeed(24);
         }
         else
         {
-            addSpeed(17);
+            addSpeed(21);
         }
-
+        Debug.Log("Tu mensaje aquí");
         this.gameObject.GetComponent<Animator>().SetBool("Andar", true);
     }
 
