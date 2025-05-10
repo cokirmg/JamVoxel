@@ -172,6 +172,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -672,7 +685,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      House-bedroom-Sheet_0: 85870537935960650
+      House-bedroom-Sheet_1: -2193975843788589452
+      House-bedroom-Sheet_10: -5960892347117088881
+      House-bedroom-Sheet_11: 4054657046463271120
+      House-bedroom-Sheet_12: 58450477165007459
+      House-bedroom-Sheet_13: 7822629121364426894
+      House-bedroom-Sheet_14: -8889786045102793501
+      House-bedroom-Sheet_15: 7003169267280911450
+      House-bedroom-Sheet_16: -2236507496511874436
+      House-bedroom-Sheet_17: 7572935366262118788
+      House-bedroom-Sheet_18: 8383845204992579254
+      House-bedroom-Sheet_19: -4882377511828608406
+      House-bedroom-Sheet_2: 1812495129778828215
+      House-bedroom-Sheet_20: -5527606736649957310
+      House-bedroom-Sheet_21: -849107227526158173
+      House-bedroom-Sheet_3: -6098097509331542829
+      House-bedroom-Sheet_4: -4991736197272115488
+      House-bedroom-Sheet_5: -5779632470054983541
+      House-bedroom-Sheet_6: -7794934935754265927
+      House-bedroom-Sheet_7: -6189298164393379873
+      House-bedroom-Sheet_8: 5607334608380027858
+      House-bedroom-Sheet_9: 5336616118555498706
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

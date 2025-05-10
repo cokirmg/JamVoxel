@@ -175,6 +175,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -697,7 +710,30 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      House-bathroom-Sheet2_0: -3101018208597892319
+      House-bathroom-Sheet2_1: -6215841472403830423
+      House-bathroom-Sheet2_10: -5104351179489035496
+      House-bathroom-Sheet2_11: 5096350720941170855
+      House-bathroom-Sheet2_12: 7386173928563048483
+      House-bathroom-Sheet2_13: 5208122465542286705
+      House-bathroom-Sheet2_14: -3471680687474668097
+      House-bathroom-Sheet2_15: -5507726425843893508
+      House-bathroom-Sheet2_16: 3367570827031011972
+      House-bathroom-Sheet2_17: 8372503715038455084
+      House-bathroom-Sheet2_18: 8171366794169886004
+      House-bathroom-Sheet2_19: 7967948281567838288
+      House-bathroom-Sheet2_2: 8181518786541825699
+      House-bathroom-Sheet2_20: 5272527990584674167
+      House-bathroom-Sheet2_21: -3702828254501126670
+      House-bathroom-Sheet2_22: 8833855932782665282
+      House-bathroom-Sheet2_3: 3907138538072215825
+      House-bathroom-Sheet2_4: -1247454354012410138
+      House-bathroom-Sheet2_5: -4295079623591521071
+      House-bathroom-Sheet2_6: -8339773962788731227
+      House-bathroom-Sheet2_7: 8279239764171396136
+      House-bathroom-Sheet2_8: -4881466508725685310
+      House-bathroom-Sheet2_9: -6589400399330888211
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

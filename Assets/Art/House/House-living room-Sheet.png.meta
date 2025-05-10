@@ -160,6 +160,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -572,7 +585,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      House-living room-Sheet_0: 2648425279886888062
+      House-living room-Sheet_1: 6539837014655237151
+      House-living room-Sheet_10: -8915278294465586356
+      House-living room-Sheet_11: -1304739159288558552
+      House-living room-Sheet_12: -2451539742620534989
+      House-living room-Sheet_13: 678098576750501601
+      House-living room-Sheet_14: 4528381743387195061
+      House-living room-Sheet_15: 256474612371198035
+      House-living room-Sheet_16: -5305315975825293095
+      House-living room-Sheet_17: 107140134355569814
+      House-living room-Sheet_2: -4834197603042039861
+      House-living room-Sheet_3: -3313863138059785588
+      House-living room-Sheet_4: 6005174485711608541
+      House-living room-Sheet_5: -5529892816037486134
+      House-living room-Sheet_6: -3769159321248034909
+      House-living room-Sheet_7: 5763786497211273912
+      House-living room-Sheet_8: 9183346699196987166
+      House-living room-Sheet_9: -4567403536377695666
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

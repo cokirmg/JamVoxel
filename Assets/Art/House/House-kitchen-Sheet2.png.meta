@@ -190,6 +190,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -822,7 +835,35 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      House-kitchen-Sheet2_0: -5751009247007331155
+      House-kitchen-Sheet2_1: -3107776244202047386
+      House-kitchen-Sheet2_10: -874575603312348179
+      House-kitchen-Sheet2_11: 8628282567553198432
+      House-kitchen-Sheet2_12: 8912622190702948327
+      House-kitchen-Sheet2_13: 8188945111510539130
+      House-kitchen-Sheet2_14: 1460272508381989438
+      House-kitchen-Sheet2_15: 2846872893178274389
+      House-kitchen-Sheet2_16: 791792335808793035
+      House-kitchen-Sheet2_17: 3498274582266659711
+      House-kitchen-Sheet2_18: 5033363393548708913
+      House-kitchen-Sheet2_19: -5251424099626093739
+      House-kitchen-Sheet2_2: -6017941955660932943
+      House-kitchen-Sheet2_20: -7405414554453316954
+      House-kitchen-Sheet2_21: -6733251680676457094
+      House-kitchen-Sheet2_22: -857544800421828464
+      House-kitchen-Sheet2_23: 5444527958875298775
+      House-kitchen-Sheet2_24: -444950995082681346
+      House-kitchen-Sheet2_25: 6173172961845089172
+      House-kitchen-Sheet2_26: -3219656155824447120
+      House-kitchen-Sheet2_27: 2781369241144863657
+      House-kitchen-Sheet2_3: 5963801754090092728
+      House-kitchen-Sheet2_4: -1330533794405910075
+      House-kitchen-Sheet2_5: 2060944541107482590
+      House-kitchen-Sheet2_6: -590357530087849204
+      House-kitchen-Sheet2_7: 4142258558018268719
+      House-kitchen-Sheet2_8: 134881771440703123
+      House-kitchen-Sheet2_9: -3011444156635106984
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

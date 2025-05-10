@@ -169,6 +169,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -647,7 +660,28 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      House-tileset-Sheet_0: -6521819873870807159
+      House-tileset-Sheet_1: 1819202946690246224
+      House-tileset-Sheet_10: -8103271045721871884
+      House-tileset-Sheet_11: -5220287474680819184
+      House-tileset-Sheet_12: -3693888409184228862
+      House-tileset-Sheet_13: 28580895860148057
+      House-tileset-Sheet_14: -4715515737893956527
+      House-tileset-Sheet_15: -4050989377233098516
+      House-tileset-Sheet_16: 3780288915399188583
+      House-tileset-Sheet_17: 1895827811227137449
+      House-tileset-Sheet_18: -705706344360586418
+      House-tileset-Sheet_19: 5564658704749974232
+      House-tileset-Sheet_2: -5550828648532653950
+      House-tileset-Sheet_20: 2276126602709259089
+      House-tileset-Sheet_3: -5706769662765003599
+      House-tileset-Sheet_4: 8605112070948204677
+      House-tileset-Sheet_5: -2517704441754332952
+      House-tileset-Sheet_6: 7576858363595525923
+      House-tileset-Sheet_7: -5410740392706447259
+      House-tileset-Sheet_8: -6266570923924608893
+      House-tileset-Sheet_9: 1114131087329018846
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
