@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public bool invertControls = false;
 
     private GameObject objectToPickUp = null;
-    private bool objectPicked = false;
+    public bool objectPicked = false;
     [SerializeField]
     private Transform pickUpPoint;
     private GameObject objectAtached;

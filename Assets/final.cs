@@ -18,7 +18,6 @@ public class final : MonoBehaviour, IInteractable
     }
 
     public void Interact(){
-        Debug.Log("dnfkjuiaefu");
         StartCoroutine(show());
     }
 

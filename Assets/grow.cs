@@ -5,10 +5,12 @@ public class grow : MonoBehaviour, IInteractable
 {
 
     public GameObject obj;
+    public GameObject player;
+    private PlayerController controller;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        controller = player.GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -19,7 +21,9 @@ public class grow : MonoBehaviour, IInteractable
 
     public void Interact(){
         Debug.Log("dnfkjuiaefu");
-        StartCoroutine(grower());
+        if(controller.objectPicked){
+            StartCoroutine(grower());
+        }
     }
 
    IEnumerator grower()
