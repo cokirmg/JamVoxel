@@ -42,7 +42,6 @@ public class Depresion : MonoBehaviour
         {
             addSpeed(21);
         }
-        Debug.Log("Tu mensaje aquí");
         this.gameObject.GetComponent<Animator>().SetBool("Andar", true);
     }
 
