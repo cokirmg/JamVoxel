@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     float horizontalMove = 0f;
     private Animator anim;
 
+    public bool invertControls = false;
+
     private GameObject objectToPickUp = null;
 
     [SerializeField]
@@ -19,7 +21,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        float direction = invertControls ? -1f : 1f;
+        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed * direction;
 
         anim.SetBool("Andar", Input.GetAxisRaw("Horizontal") != 0);
 
