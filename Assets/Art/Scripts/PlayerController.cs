@@ -29,6 +29,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private GameObject FeedbackInteract;
 
+    [SerializeField]
+    private FootStepController footstepController;
+
     void Start()
     {
         FeedbackInteract.GetComponent<Animation>().Play("Animation feedback");
@@ -45,15 +48,27 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        
-        if (!blockControls )
+        if (!blockControls)
         {
+            // Animación de caminar
+            bool isWalking = Input.GetAxisRaw("Horizontal") != 0;
+            anim.SetBool("Andar", isWalking);
+
+            // 🦶 Sonido de pasos
+            if (footstepController != null)
+            {
+                if (isWalking)
+                    footstepController.StartWalking();
+                else
+                    footstepController.StopWalking();
+            }
+
             // Movimiento
             float direction = invertControls ? -1f : 1f;
             horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed * direction;
-            
         }
-        if(SceneManager.GetActiveScene().buildIndex == 1)
+
+        if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             anim.SetTrigger("sleeping");
             sleeping = false;
@@ -61,15 +76,11 @@ public class PlayerController : MonoBehaviour
             this.gameObject.GetComponent<Rigidbody2D>().constraints &= ~RigidbodyConstraints2D.FreezePositionY;
         }
 
-        anim.SetBool("Andar", Input.GetAxisRaw("Horizontal") != 0);
-
         // Si se presiona la tecla E, interactuamos
-
         if (Input.GetKeyDown(KeyCode.E) && !sleeping)
         {
             anim.SetTrigger("Interact");
 
-            // Si tenemos un objeto para recoger, lo recogemos
             if (objectToPickUp != null && !objectPicked)
             {
                 objectToPickUp.transform.SetParent(pickUpPoint);
@@ -79,7 +90,7 @@ public class PlayerController : MonoBehaviour
                 objectAtached = objectToPickUp;
                 objectToPickUp = null;
             }
-            // Si estamos en una zona para dejar el objeto, lo dejamos
+
             if (zoneToDrop && objectPicked)
             {
                 Destroy(objectAtached);
@@ -87,7 +98,7 @@ public class PlayerController : MonoBehaviour
                 ZonedWhereDropped.GetComponent<DeactivateZoneToDrop>().DeactivateCollider();
                 objectPicked = false;
             }
-            // Si tenemos un objeto interactuable, lo interactuamos
+
             if (currentInteractable != null)
             {
                 Debug.Log("11111111111111111111");
@@ -103,6 +114,7 @@ public class PlayerController : MonoBehaviour
             FeedbackInteract.SetActive(false);
         }
     }
+
 
     void FixedUpdate()
     {
