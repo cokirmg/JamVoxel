@@ -38,6 +38,7 @@ public class AppearDisappearInteract : MonoBehaviour, IInteractable
             isPlaying = true;
             audioSource.clip = sonido;
             audioSource.Play();
+            this.gameObject.GetComponent<DeactivateZoneToDrop>().DeactivateCollider();
             StartCoroutine(StopAt(timeToAppear));
             StartCoroutine(WaitTime());
         }

@@ -40,6 +40,7 @@ public class AppearTrigger : MonoBehaviour
                 {
                     GameObject player = GameObject.FindWithTag("Player");
                     if (player) player.GetComponent<PlayerController>().sumarSpeed(increaseAmount);
+                    this.gameObject.GetComponent<DeactivateZoneToDrop>().DeactivateCollider();
                 }
 
                 gameObject.GetComponent<Renderer>().enabled = false;

@@ -41,6 +41,7 @@ public class AppearInteraction : MonoBehaviour, IInteractable
             isPlaying = true;
             audioSource.clip = sonido;
             audioSource.PlayOneShot(sonido);
+            this.gameObject.GetComponent<DeactivateZoneToDrop>().DeactivateCollider();
             StartCoroutine(StopAt(timeToAppear));
             StartCoroutine(WaitTime());
         }

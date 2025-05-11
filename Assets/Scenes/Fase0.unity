@@ -2404,7 +2404,7 @@ MonoBehaviour:
   animator: {fileID: 1047429506}
   tasksPerScene: 010000000100000004000000010000000100000001000000
   audioSource: {fileID: 774869322}
-  audioClip: {fileID: 8300000, guid: c383a2702b6425f4ba41a2c1a8ad340f, type: 3}
+  audioClip: {fileID: 8300000, guid: da3321c7ca435d54a9588f3d5a35673f, type: 3}
 --- !u!4 &1701915905
 Transform:
   m_ObjectHideFlags: 0
