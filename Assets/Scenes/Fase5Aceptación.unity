@@ -200,6 +200,7 @@ MonoBehaviour:
   - {fileID: 2042152767}
   - {fileID: 778935648}
   - {fileID: 2109422019}
+  player: {fileID: 1792212078}
 --- !u!212 &90060353
 SpriteRenderer:
   m_ObjectHideFlags: 0
