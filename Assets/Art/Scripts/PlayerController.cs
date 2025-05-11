@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public CharacterController2D controller;
     public float runSpeed = 40f;
-    public float maxRunSpeed = 60f;
+    public float maxRunSpeed = 200f;
 
     float horizontalMove = 0f;
     private Animator anim;
@@ -161,7 +161,7 @@ public class PlayerController : MonoBehaviour
 
     public void sumarSpeed(float suma){
         if(runSpeed < maxRunSpeed){
-            runSpeed =+ suma;
+            runSpeed += suma;
         }
     }
 
