@@ -14,7 +14,7 @@ public class CameraShake : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && SceneManager.GetActiveScene().buildIndex==5)
+        if (Input.GetKeyDown(KeyCode.D) && SceneManager.GetActiveScene().buildIndex==5)
         {
             ShakeItUp();
         }
