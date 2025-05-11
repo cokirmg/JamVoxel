@@ -1,8 +1,11 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Depresion : MonoBehaviour
 {
     public float maxSpeed = 40.0f;
+    public float timeInSofa = 5.0f;
     private float runSpeed = 0f;
     private bool depresion = false;
     private int x = 0;
@@ -71,8 +74,17 @@ public class Depresion : MonoBehaviour
         {
             depresion = true;
             this.gameObject.GetComponent<Animator>().SetBool("depresion", true);
+            StartCoroutine(WaitTime());
+
         }
-        
-        
+
+
+    }
+
+    private IEnumerator WaitTime()
+    {
+        yield return new WaitForSeconds(timeInSofa);
+        GameObject sceneManager = GameObject.Find("SceneManager");
+        if (sceneManager) sceneManager.GetComponent<SceneController2>().NextLevel();
     }
 }
