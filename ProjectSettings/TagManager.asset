@@ -9,6 +9,7 @@ TagManager:
   - zoneToDrop
   - Interact
   - SceneManager
+  - cloud
   layers:
   - Default
   - TransparentFX
