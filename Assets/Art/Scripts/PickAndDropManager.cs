@@ -9,6 +9,15 @@ public class PickAndDropManager : MonoBehaviour
     private GameObject player;
     private GameObject sceneManager;
     private GameObject camera;
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip negationEffect;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+    }
     public void avanceNivel()
     {
         conteo++;
@@ -25,6 +34,7 @@ public class PickAndDropManager : MonoBehaviour
             camera = GameObject.Find("Main Camera");
             camera.GetComponent<CameraShake>().ShakeItUp();
             player.GetComponent<PlayerController>().invertControls = !player.GetComponent<PlayerController>().invertControls;
+            audioSource.PlayOneShot(negationEffect);
         }
     }
 }
