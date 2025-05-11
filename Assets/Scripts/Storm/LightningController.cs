@@ -155,7 +155,7 @@ public class LightningController : MonoBehaviour
         thunderAudioSource.clip = thunderClip;
         thunderAudioSource.pitch = Random.Range(minPitch, maxPitch);
         thunderAudioSource.volume = thunderVolume;
-        thunderAudioSource.Play();
+        thunderAudioSource.PlayOneShot(thunderClip);
     }
 
     // For manual testing or triggering lightning via other game events
