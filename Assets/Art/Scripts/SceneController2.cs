@@ -41,6 +41,11 @@ public class SceneController2 : MonoBehaviour
             
     }
 
+    public void TrampitaNextLevel() 
+    {
+        StartCoroutine(LoadLevel());
+    }
+
     IEnumerator LoadLevel()
     {
         animator.SetTrigger("End");
