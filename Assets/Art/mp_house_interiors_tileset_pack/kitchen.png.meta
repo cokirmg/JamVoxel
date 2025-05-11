@@ -802,10 +802,10 @@ TextureImporter:
       name: kitchen_26
       rect:
         serializedVersion: 2
-        x: 240
-        y: 58
-        width: 7
-        height: 14
+        x: 49
+        y: 112
+        width: 14
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
