@@ -36,15 +36,15 @@ public class Depresion : MonoBehaviour
         }
         else if (transform.position.x >= -14.0f && transform.position.x < -4.0f)
         {
-            addSpeed(27);
+            addSpeed(28);
         }
         else if (transform.position.x >= 6.0f && transform.position.x < 16.0f)
         {
-            addSpeed(22);
+            addSpeed(26);
         }
         else
         {
-            addSpeed(19);
+            addSpeed(23);
         }
         this.gameObject.GetComponent<Animator>().SetBool("Andar", true);
     }else{

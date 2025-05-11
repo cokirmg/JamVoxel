@@ -1,34 +1,66 @@
 using UnityEngine;
+using System.Collections;
 
 public class CloudSpawner : MonoBehaviour
 {
-
     public Sprite[] sprites;
     public bool active = false;
     private SpriteRenderer spriteRenderer;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField]
+    private float cooldownAfterPop = 1f; // Tiempo de espera antes de permitir nueva nube
+
+    private bool onCooldown = false;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         
     }
 
-    public void createCloud(){
-        int index = Random.Range(0, sprites.Length); // Elegir índice aleatorio
-        spriteRenderer.sprite = sprites[index];      // Asignar sprite
-        active = true;
+    public void createCloud()
+    {
+        if (onCooldown) return;
 
-        //transform.localScale = new Vector3(2f, 2f, 1f); // Escalar al doble
+        int index = Random.Range(0, sprites.Length);
+        spriteRenderer.sprite = sprites[index];
+        spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
+        active = true;
     }
 
-    public void popCloud(){
-        spriteRenderer.sprite = null; // Quitar el sprite
+    public void popCloud()
+    {
+        if (active)
+        {
+            StartCoroutine(FadeOutAndDisable());
+        }
+    }
+
+    IEnumerator FadeOutAndDisable()
+    {
+        float duration = 0.25f;
+        float elapsed = 0f;
+        Color originalColor = spriteRenderer.color;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(1f, 0f, elapsed / duration);
+            spriteRenderer.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
+            yield return null;
+        }
+
+        spriteRenderer.sprite = null;
+        spriteRenderer.color = new Color(originalColor.r, originalColor.g, originalColor.b, 1f);
         active = false;
+
+        // Iniciar cooldown
+        onCooldown = true;
+        yield return new WaitForSeconds(cooldownAfterPop);
+        onCooldown = false;
     }
 }
