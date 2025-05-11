@@ -21,10 +21,9 @@ public class final : MonoBehaviour, IInteractable
     }
 
     public void Interact(){
-        StartCoroutine(show());
-        StartCoroutine(WaitEnd());
         if(controller.objectPicked){
             StartCoroutine(show());
+            StartCoroutine(WaitEnd());
         }
     }
 
