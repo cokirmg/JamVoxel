@@ -21,7 +21,7 @@ public class Depresion : MonoBehaviour
 {
     transform.Translate(Vector3.right * runSpeed * Time.deltaTime);
 
-    if (Input.GetKeyDown(KeyCode.E))
+    if (Input.GetKeyDown(KeyCode.D))
     {
         if (depresion) return; // No hacer nada si está en depresión
 
@@ -30,15 +30,15 @@ public class Depresion : MonoBehaviour
         x++;
         }
 
-        if (transform.position.x > -10.0f && transform.position.x < 10.0f)
+        if (transform.position.x > -24.0f && transform.position.x < -14.0f)
         {
             addSpeed(30);
         }
-        else if (transform.position.x >= 10.0f && transform.position.x < 20.0f)
+        else if (transform.position.x >= -14.0f && transform.position.x < -4.0f)
         {
             addSpeed(27);
         }
-        else if (transform.position.x >= 20.0f && transform.position.x < 26.0f)
+        else if (transform.position.x >= 6.0f && transform.position.x < 16.0f)
         {
             addSpeed(22);
         }
