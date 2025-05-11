@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &368048204 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4618457075811310129, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+  m_PrefabInstance: {fileID: 1591365845}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &434527848
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +206,93 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.3125, y: 0.875}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &468227209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 468227210}
+  - component: {fileID: 468227211}
+  m_Layer: 0
+  m_Name: living_room_6 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &468227210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468227209}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 23.25, y: -5.38, z: 0.0870332}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 368048204}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!212 &468227211
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468227209}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 5355731655343586607, guid: 65f7d7813555fee4e946382761f89b0e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.125, y: 2.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -472,6 +564,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1200804304 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8838473927318772543, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+  m_PrefabInstance: {fileID: 1591365845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1200804307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200804304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7253d4b5a127d7429ddbfecc5564205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToAppera: {fileID: 468227209}
+  increaseSpeed: 1
+  increaseAmount: 7
+  sonido: {fileID: 8300000, guid: ab5ca47bbeb349f40aa18f75c0e2032b, type: 3}
+--- !u!61 &1200804308
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200804304}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.125, y: 2.875}
+    newSize: {x: 1.125, y: 2.875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.125, y: 2.875}
+  m_EdgeRadius: 0
 --- !u!1 &1365576328
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,10 +782,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToAppera: {fileID: 632715715}
-  timeToAppear: 0.5
+  timeToAppear: 3
+  timeSonido2: 1
   isLevelTask: 1
-  sonido: {fileID: 8300000, guid: e3d53fd1358062d48b9b8e19f4805072, type: 3}
-  sonido2: {fileID: 8300000, guid: e3d53fd1358062d48b9b8e19f4805072, type: 3}
+  increaseSpeed: 1
+  increaseAmount: 7
+  sonido: {fileID: 8300000, guid: 470916108babf954fb366367fcbc05a1, type: 3}
+  sonido2: {fileID: 8300000, guid: 312407b8f5739044f8a9be1927dae638, type: 3}
 --- !u!1001 &1591365845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -694,6 +856,9 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4618457075811310129, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      insertIndex: 6
+      addedObject: {fileID: 468227210}
     - targetCorrespondingSourceObject: {fileID: 7343756258642689866, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
       insertIndex: -1
       addedObject: {fileID: 834549652}
@@ -713,6 +878,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1138381768}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8838473927318772543, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1200804308}
+    - targetCorrespondingSourceObject: {fileID: 8838473927318772543, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1200804307}
     - targetCorrespondingSourceObject: {fileID: 4358736703276633370, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1591365848}
@@ -753,7 +924,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToAppera: {fileID: 834549651}
   timeToAppear: 0.5
+  timeSonido2: 0.5
   isLevelTask: 1
+  increaseSpeed: 0
+  increaseAmount: 7
   sonido: {fileID: 0}
   sonido2: {fileID: 0}
 --- !u!1 &1657192334 stripped
@@ -774,10 +948,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToAppera: {fileID: 834549651}
-  timeToAppear: 1
+  timeToAppear: 2
+  timeSonido2: 1
   isLevelTask: 1
-  sonido: {fileID: 8300000, guid: e3d53fd1358062d48b9b8e19f4805072, type: 3}
-  sonido2: {fileID: 8300000, guid: e3d53fd1358062d48b9b8e19f4805072, type: 3}
+  increaseSpeed: 1
+  increaseAmount: 10
+  sonido: {fileID: 8300000, guid: d334514a51e104443befb0ffd6637442, type: 3}
+  sonido2: {fileID: 8300000, guid: 312407b8f5739044f8a9be1927dae638, type: 3}
 --- !u!61 &1657192338
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -926,11 +1103,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToAppera: {fileID: 434527848}
-  timeToAppear: 1
-  timeToDesappear: 1
+  timeToAppear: 4
+  timeToDesappear: 4
   isLevelTask: 1
-  sonido: {fileID: 8300000, guid: e3d53fd1358062d48b9b8e19f4805072, type: 3}
-  sonido2: {fileID: 8300000, guid: e3d53fd1358062d48b9b8e19f4805072, type: 3}
+  increaseSpeed: 1
+  increaseAmount: 12
+  sonido: {fileID: 8300000, guid: 116ea77ba9460fb468d9eafed8f1f5d5, type: 3}
+  sonido2: {fileID: 8300000, guid: 7180d40dfafc24343b2774d8904ee196, type: 3}
 --- !u!61 &2121764901
 BoxCollider2D:
   m_ObjectHideFlags: 0

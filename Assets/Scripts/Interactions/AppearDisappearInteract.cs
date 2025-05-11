@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AppearDisappearInteract : MonoBehaviour, IInteractable
 {
@@ -9,6 +10,10 @@ public class AppearDisappearInteract : MonoBehaviour, IInteractable
     private float timeToAppear = 0.5f, timeToDesappear = 0.5f;
     [SerializeField]
     private bool isLevelTask = false;
+    [SerializeField]
+    private bool increaseSpeed = false;
+    [SerializeField]
+    private float increaseAmount = 10;
 
     private GameObject sceneManager;
     private bool isPlaying = false;
@@ -21,7 +26,6 @@ public class AppearDisappearInteract : MonoBehaviour, IInteractable
 
     private void Awake()
     {
-        // Buscar o agregar el AudioSource
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
             audioSource = gameObject.AddComponent<AudioSource>();
@@ -47,6 +51,13 @@ public class AppearDisappearInteract : MonoBehaviour, IInteractable
         audioSource.clip = sonido2;
         audioSource.Play();
         StartCoroutine(StopAt(timeToDesappear));
+
+        //AUMENTAMOS LA VELOCIDAD
+        if (increaseSpeed)
+        {
+            GameObject player = GameObject.FindWithTag("Player");
+            if (player) player.GetComponent<PlayerController>().sumarSpeed(increaseAmount);
+        }
 
         yield return new WaitForSeconds(timeToDesappear);
         objectToAppera.SetActive(false);

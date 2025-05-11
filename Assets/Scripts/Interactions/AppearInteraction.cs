@@ -12,6 +12,10 @@ public class AppearInteraction : MonoBehaviour, IInteractable
     private float timeToAppear = 0.5f, timeSonido2 = 0.5f;
     [SerializeField]
     private bool isLevelTask = false;
+    [SerializeField]
+    private bool increaseSpeed = false;
+    [SerializeField]
+    private float increaseAmount = 7;
 
     private GameObject sceneManager;
     private bool isPlaying = false;
@@ -24,7 +28,6 @@ public class AppearInteraction : MonoBehaviour, IInteractable
 
     private void Awake()
     {
-        // Buscar o agregar el AudioSource
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
             audioSource = gameObject.AddComponent<AudioSource>();
@@ -51,6 +54,13 @@ public class AppearInteraction : MonoBehaviour, IInteractable
         audioSource.clip = sonido2;
         audioSource.Play();
         StartCoroutine(StopAt(timeSonido2));
+
+        //AUMENTAMOS LA VELOCIDAD
+        if (increaseSpeed)
+        {
+            GameObject player = GameObject.FindWithTag("Player");
+            if (player) player.GetComponent<PlayerController>().sumarSpeed(increaseAmount);
+        }
 
         if (isLevelTask) 
         {
