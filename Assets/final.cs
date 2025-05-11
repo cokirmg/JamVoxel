@@ -5,10 +5,12 @@ public class final : MonoBehaviour, IInteractable
 {
 
     public GameObject[] objs;
+       public GameObject player;
+    private PlayerController controller;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        controller = player.GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -18,7 +20,9 @@ public class final : MonoBehaviour, IInteractable
     }
 
     public void Interact(){
-        StartCoroutine(show());
+        if(controller.objectPicked){
+            StartCoroutine(show());
+        }
     }
 
 IEnumerator show()
