@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     private GameObject gameManager;
     private bool zoneToDrop = false;
     public bool blockControls = true;
-    private bool sleeping = true;
+    public bool sleeping = true;
     // A�adimos la variable para almacenar el objeto interactuable
     private IInteractable currentInteractable = null;
 
