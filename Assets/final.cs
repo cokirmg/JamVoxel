@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class final : MonoBehaviour, IInteractable
 {
@@ -19,6 +20,7 @@ public class final : MonoBehaviour, IInteractable
 
     public void Interact(){
         StartCoroutine(show());
+        StartCoroutine(WaitEnd());
     }
 
 IEnumerator show()
@@ -54,6 +56,10 @@ IEnumerator FadeIn(SpriteRenderer sr, float duration)
     }
 }
 
-
+    private IEnumerator WaitEnd()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadSceneAsync(7);
+    }
 
 }
