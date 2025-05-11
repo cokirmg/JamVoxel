@@ -7,6 +7,7 @@ public class grow : MonoBehaviour, IInteractable
     public GameObject obj;
     public GameObject player;
     private PlayerController controller;
+    private int once = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,8 +21,9 @@ public class grow : MonoBehaviour, IInteractable
     }
 
     public void Interact(){
-        if(controller.objectPicked){
+        if(controller.objectPicked && once == 0){
             StartCoroutine(grower());
+            once++;
         }
     }
 
