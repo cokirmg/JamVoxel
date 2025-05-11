@@ -162,7 +162,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 49f396cedebd18a43974ed3cd628b9bf, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
@@ -254,6 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstPoint: {fileID: 857977695}
+  Player: {fileID: 2090930644}
 --- !u!1 &857977694
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,7 +364,7 @@ PrefabInstance:
       addedObject: {fileID: 1591365852}
     - targetCorrespondingSourceObject: {fileID: 5715281989779242875, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2090930653}
+      addedObject: {fileID: 2090930671}
   m_SourcePrefab: {fileID: 100100000, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
 --- !u!4 &1591365846 stripped
 Transform:
@@ -549,7 +550,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5715281989779242875, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
   m_PrefabInstance: {fileID: 1591365845}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2090930653
+--- !u!114 &2090930671
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

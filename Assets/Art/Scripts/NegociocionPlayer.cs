@@ -18,6 +18,7 @@ public class NegociocionPlayer : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && playerController.sleeping)
         {
+            Debug.Log("Entre sabes en la chingadera");
             Cat.GetComponent<Animator>().SetTrigger("start");
         }
     }
