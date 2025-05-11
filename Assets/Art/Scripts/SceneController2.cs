@@ -28,7 +28,7 @@ public class SceneController2 : MonoBehaviour
     {
         currentTasksDone++;
 
-        if (tasksPerScene[SceneManager.GetActiveScene().buildIndex - 1] >= currentTasksDone) 
+        if (tasksPerScene[SceneManager.GetActiveScene().buildIndex - 1] == currentTasksDone) 
         {
             currentTasksDone = 0;
             StartCoroutine(LoadLevel());
