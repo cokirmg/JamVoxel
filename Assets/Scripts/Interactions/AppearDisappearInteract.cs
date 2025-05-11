@@ -70,7 +70,7 @@ public class AppearDisappearInteract : MonoBehaviour, IInteractable
             if (sceneManager) sceneManager.GetComponent<SceneController2>().NextLevel();
         }
         this.enabled = false;
-        gameObject.tag = "Untagged";
+       // gameObject.tag = "Untagged";
     }
 
     private IEnumerator StopAt(float segundos)

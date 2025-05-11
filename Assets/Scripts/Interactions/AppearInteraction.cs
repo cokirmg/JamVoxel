@@ -69,7 +69,7 @@ public class AppearInteraction : MonoBehaviour, IInteractable
         }
 
         this.enabled = false;
-        gameObject.tag = "Untagged";
+      //  gameObject.tag = "Untagged";
     }
 
     private IEnumerator StopAt(float segundos)
