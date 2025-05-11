@@ -573,7 +573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newCamPos: {x: -19, y: 2, z: -10}
-  newPlayerPos: {x: -12, y: -1, z: 0}
+  newPlayerPos: {x: -12, y: 0.5, z: 0}
 --- !u!1 &3137055545610909936
 GameObject:
   m_ObjectHideFlags: 0
@@ -9303,7 +9303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newCamPos: {x: 40, y: 2, z: -10}
-  newPlayerPos: {x: 33, y: -1, z: 0}
+  newPlayerPos: {x: 33, y: 0.5, z: 0}
 --- !u!1 &4779546201939854047
 GameObject:
   m_ObjectHideFlags: 0
@@ -9436,7 +9436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newCamPos: {x: 20, y: 2, z: -10}
-  newPlayerPos: {x: 27, y: -1, z: 0}
+  newPlayerPos: {x: 27, y: 0.5, z: 0}
 --- !u!1 &5310261343756590573
 GameObject:
   m_ObjectHideFlags: 0
@@ -10594,7 +10594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newCamPos: {x: 0, y: 2, z: -10}
-  newPlayerPos: {x: 7, y: -1, z: 0}
+  newPlayerPos: {x: 7, y: 0.5, z: 0}
 --- !u!1 &5946587604821203423
 GameObject:
   m_ObjectHideFlags: 0
@@ -11454,7 +11454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newCamPos: {x: 0, y: 2, z: -10}
-  newPlayerPos: {x: -7, y: -1, z: 0}
+  newPlayerPos: {x: -7, y: 0.5, z: 0}
 --- !u!1 &6851571308755616401
 GameObject:
   m_ObjectHideFlags: 0
@@ -11656,7 +11656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newCamPos: {x: 20, y: 2, z: -10}
-  newPlayerPos: {x: 13, y: -1, z: 0}
+  newPlayerPos: {x: 13, y: 0.5, z: 0}
 --- !u!1 &7268256406365075012
 GameObject:
   m_ObjectHideFlags: 0
