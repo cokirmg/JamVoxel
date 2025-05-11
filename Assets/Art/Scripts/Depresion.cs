@@ -9,6 +9,8 @@ public class Depresion : MonoBehaviour
     private float runSpeed = 0f;
     private bool depresion = false;
     private int x = 0;
+        [SerializeField]
+    private GameObject FeedbackInteract;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -74,6 +76,7 @@ public class Depresion : MonoBehaviour
         {
             depresion = true;
             this.gameObject.GetComponent<Animator>().SetBool("depresion", true);
+            FeedbackInteract.SetActive(false);
             StartCoroutine(WaitTime());
 
         }
