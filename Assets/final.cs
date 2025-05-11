@@ -4,17 +4,16 @@ using UnityEngine.SceneManagement;
 
 public class final : MonoBehaviour, IInteractable
 {
-
+    public TopToBottomLightEffect topToBottomLightEffect;
     public GameObject[] objs;
-       public GameObject player;
+    public GameObject player;
     private PlayerController controller;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         controller = player.GetComponent<PlayerController>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -23,6 +22,7 @@ public class final : MonoBehaviour, IInteractable
     public void Interact(){
         if(controller.objectPicked){
             StartCoroutine(show());
+            //topToBottomLightEffect.TriggerLightAppearance();
             StartCoroutine(WaitEnd());
         }
     }
