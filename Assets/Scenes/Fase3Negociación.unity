@@ -810,11 +810,155 @@ PrefabInstance:
       objectReference: {fileID: 1591365852}
     - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
       propertyPath: _dayDuration
-      value: 10
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.ctime0
+      value: 6554
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.ctime1
+      value: 13107
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.ctime2
+      value: 16384
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.ctime3
+      value: 45875
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.ctime4
+      value: 52428
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.ctime5
+      value: 58982
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.key0.b
+      value: 0.19136344
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.key0.g
+      value: 0.19136344
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.key0.r
+      value: 0.19245279
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.key1.b
+      value: 0.94716984
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.key1.g
+      value: 0.491456
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.key1.r
+      value: 0.8686448
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.key2.b
+      value: 0.64228547
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.key2.g
+      value: 0.9907347
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.key2.r
+      value: 0.9924528
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.key3.b
+      value: 0.53396225
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.key3.g
+      value: 0.9895442
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.key3.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.key4.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.key4.g
+      value: 0.33376744
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.key4.r
+      value: 0.93207544
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.key5.b
+      value: 0.099957235
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.key5.g
+      value: 0.116227254
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _lightColor.key5.r
+      value: 0.381132
       objectReference: {fileID: 0}
     - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
       propertyPath: _useRealTimeProgression
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _ambientLightColor.ctime0
+      value: 6554
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _ambientLightColor.ctime1
+      value: 13107
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _ambientLightColor.ctime2
+      value: 16384
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _ambientLightColor.ctime3
+      value: 45875
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _ambientLightColor.ctime4
+      value: 52428
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _ambientLightColor.ctime5
+      value: 58982
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _ambientLightColor.key0.b
+      value: 0.18490559
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _ambientLightColor.key0.g
+      value: 0.18490559
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _ambientLightColor.key0.r
+      value: 0.18490559
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _ambientLightColor.key5.b
+      value: 0.099957235
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _ambientLightColor.key5.g
+      value: 0.116227254
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789275449578839033, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      propertyPath: _ambientLightColor.key5.r
+      value: 0.381132
       objectReference: {fileID: 0}
     - target: {fileID: 3150955708096327034, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
       propertyPath: m_Name
@@ -912,7 +1056,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cover: {fileID: 1795440026}
-  sonidoPuerta: {fileID: 8300000, guid: ab5ca47bbeb349f40aa18f75c0e2032b, type: 3}
 --- !u!61 &1591365851
 BoxCollider2D:
   m_ObjectHideFlags: 0
