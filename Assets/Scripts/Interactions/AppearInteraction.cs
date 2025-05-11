@@ -19,6 +19,7 @@ public class AppearInteraction : MonoBehaviour, IInteractable
 
     private GameObject sceneManager;
     private bool isPlaying = false;
+    private GameObject daylight;
 
 
     [SerializeField] 
@@ -39,7 +40,7 @@ public class AppearInteraction : MonoBehaviour, IInteractable
         {
             isPlaying = true;
             audioSource.clip = sonido;
-            audioSource.Play();
+            audioSource.PlayOneShot(sonido);
             StartCoroutine(StopAt(timeToAppear));
             StartCoroutine(WaitTime());
         }
@@ -55,11 +56,14 @@ public class AppearInteraction : MonoBehaviour, IInteractable
         audioSource.Play();
         StartCoroutine(StopAt(timeSonido2));
 
-        //AUMENTAMOS LA VELOCIDAD
+        //AUMENTAMOS LA VELOCIDAD Y EL CICLO DE DIA
         if (increaseSpeed)
         {
             GameObject player = GameObject.FindWithTag("Player");
             if (player) player.GetComponent<PlayerController>().sumarSpeed(increaseAmount);
+            daylight = GameObject.Find("GlobalLight");
+            daylight.GetComponent<DayNightCycle>()._dayDuration -= 1.25f;
+
         }
 
         if (isLevelTask) 

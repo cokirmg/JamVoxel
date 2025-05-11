@@ -5,7 +5,7 @@ using UnityEngine.Rendering.Universal;
 public class DayNightCycle : MonoBehaviour
 {
     [Header("Time Settings")]
-    [SerializeField] private float _dayDuration = 120f; // Full day/night cycle in seconds (for real-time mode)
+    [SerializeField] public float _dayDuration = 120f; // Full day/night cycle in seconds (for real-time mode)
     [SerializeField] private bool _useRealTimeProgression = false;
     [Range(0f, 1f)]
     [SerializeField] private float _timeOfDay = 0.25f; // 0 = midnight, 0.25 = sunrise, 0.5 = noon, 0.75 = sunset, 1 = midnight
