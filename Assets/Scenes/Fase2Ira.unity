@@ -1290,6 +1290,20 @@ MonoBehaviour:
   increaseAmount: 7
   sonido: {fileID: 8300000, guid: 470916108babf954fb366367fcbc05a1, type: 3}
   sonido2: {fileID: 8300000, guid: 312407b8f5739044f8a9be1927dae638, type: 3}
+--- !u!114 &1380580834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380580829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b5da1df166dd0d48acc5b57b934675b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightMaterial: {fileID: 2100000, guid: 596633de6ea7c684fbc15ad781cf4029, type: 2}
+  defaultMaterial: {fileID: 2100000, guid: 0e14ec66b1feb44409193600ef654e3b, type: 2}
 --- !u!1 &1398827318 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3870204929928486325, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
@@ -1361,6 +1375,20 @@ MonoBehaviour:
   increaseAmount: 15
   sonido: {fileID: 8300000, guid: c704d95a967dcd344b1602eaa2b00723, type: 3}
   sonido2: {fileID: 8300000, guid: e7f1d95a0b8bc824cac3837a700832f9, type: 3}
+--- !u!114 &1398827324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398827318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b5da1df166dd0d48acc5b57b934675b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightMaterial: {fileID: 2100000, guid: 596633de6ea7c684fbc15ad781cf4029, type: 2}
+  defaultMaterial: {fileID: 2100000, guid: 0e14ec66b1feb44409193600ef654e3b, type: 2}
 --- !u!1001 &1591365845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2002,6 +2030,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6025299460098168120, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1657192338}
+    - targetCorrespondingSourceObject: {fileID: 6025299460098168120, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1657192339}
     - targetCorrespondingSourceObject: {fileID: 9017041210941540605, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1809380816}
@@ -2014,12 +2045,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 979476874875618218, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1380580832}
+    - targetCorrespondingSourceObject: {fileID: 979476874875618218, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1380580834}
     - targetCorrespondingSourceObject: {fileID: 3870204929928486325, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1398827322}
     - targetCorrespondingSourceObject: {fileID: 3870204929928486325, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1398827323}
+    - targetCorrespondingSourceObject: {fileID: 3870204929928486325, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1398827324}
   m_SourcePrefab: {fileID: 100100000, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
 --- !u!4 &1591365846 stripped
 Transform:
@@ -2122,6 +2159,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.0625, y: 1.8125}
   m_EdgeRadius: 0
+--- !u!114 &1657192339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657192334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b5da1df166dd0d48acc5b57b934675b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightMaterial: {fileID: 2100000, guid: 596633de6ea7c684fbc15ad781cf4029, type: 2}
+  defaultMaterial: {fileID: 2100000, guid: 0e14ec66b1feb44409193600ef654e3b, type: 2}
 --- !u!1 &1809380813 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9017041210941540605, guid: 0ad718790629eda4f8e87dafa0ced251, type: 3}
@@ -2205,6 +2256,7 @@ GameObject:
   - component: {fileID: 2121764899}
   - component: {fileID: 2121764900}
   - component: {fileID: 2121764901}
+  - component: {fileID: 2121764902}
   m_Layer: 0
   m_Name: Pan
   m_TagString: Interact
@@ -2348,6 +2400,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.875, y: 0.4375}
   m_EdgeRadius: 0
+--- !u!114 &2121764902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121764897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b5da1df166dd0d48acc5b57b934675b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightMaterial: {fileID: 2100000, guid: 596633de6ea7c684fbc15ad781cf4029, type: 2}
+  defaultMaterial: {fileID: 2100000, guid: 0e14ec66b1feb44409193600ef654e3b, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
