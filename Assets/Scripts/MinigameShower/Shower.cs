@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Audio;
 
 [System.Serializable]
 public struct IntPair
@@ -25,6 +26,10 @@ public class Shower : MonoBehaviour
     public ProgressBar progressBar;
     [SerializeField]
     private GameObject cover;
+    [SerializeField]
+    private AudioClip sonidoAgua, sonidoPuerta;
+
+    private AudioSource audioSource;
 
     public IntPair[] valuesMarck = new IntPair[]
     {
@@ -38,6 +43,14 @@ public class Shower : MonoBehaviour
     private int showerIndex = 0;
     private float currentValue = 0;
     private bool isKeyPressed = false;
+
+    private void Awake()
+    {
+        // Buscar o agregar el AudioSource
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+    }
 
     private void Start()
     {
@@ -99,21 +112,23 @@ public class Shower : MonoBehaviour
     {
         progressBar.SetFillValue(totalValue, totalValue);
 
-        //TODO SONIDITO 
-        yield return new WaitForSeconds(1.0f);
+        audioSource.clip = sonidoAgua;
+        audioSource.Play();
+        yield return new WaitForSeconds(2.0f);
+        audioSource.Stop();
         if (!SetStatus())
         {
-            cover.SetActive(true);
+            cover.SetActive(false);
             GameObject player = GameObject.FindWithTag("Player");
             if (player != null)
             {
                 player.GetComponent<PlayerController>().blockControls = false;
                 player.GetComponent<Renderer>().enabled = true;
                 player.GetComponent<PressKey>().enabled = false;
+                audioSource.clip = sonidoPuerta;
+                audioSource.Play();
             }
 
-            //TODO CAMBIO DE ESCENAAAA 
-            Debug.Log("FINNNNNNNNNNN");
         }
         currentValue = 0;
         progressBar.SetFillValue(totalValue, currentValue);
