@@ -35,6 +35,12 @@ public class PlayerController : MonoBehaviour
         FeedbackInteract.SetActive(true);
         anim = GetComponent<Animator>();
         gameManager = GameObject.Find("GameManager");
+
+
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            FeedbackInteract.SetActive(false);
+        }
     }
 
     void Update()
@@ -53,7 +59,6 @@ public class PlayerController : MonoBehaviour
             sleeping = false;
             blockControls = false;
             this.gameObject.GetComponent<Rigidbody2D>().constraints &= ~RigidbodyConstraints2D.FreezePositionY;
-            FeedbackInteract.SetActive(false);
         }
 
         anim.SetBool("Andar", Input.GetAxisRaw("Horizontal") != 0);
