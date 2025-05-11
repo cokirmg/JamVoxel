@@ -12,6 +12,11 @@ public class SceneController2 : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip audioClip;
 
+
+    //Se que essto no se hace asi pero son las 7am 
+    private bool fade1 = false;
+    private bool fade2 = false;
+    private bool fade3 = false;
     private int currentTasksDone = 0;
 
     private void Awake()
@@ -51,22 +56,30 @@ public class SceneController2 : MonoBehaviour
         animator.SetTrigger("End");
         yield return new WaitForSeconds(2);
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
-        if(SceneManager.GetActiveScene().buildIndex + 1 == 4)
+        animator.SetTrigger("Start");        
+    }
+
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 4 && !fade1)
         {
             audioSource.volume = 0;
             audioSource.clip = audioClip;
             audioSource.Play();
-            audioSource.volume = Mathf.Lerp(0, 20, 0.002f);
+            audioSource.volume = Mathf.Lerp(0, 0.3f, 0.1f);
+            fade1 = true;
         }
-        else if (SceneManager.GetActiveScene().buildIndex + 1 == 5)
+        else if (SceneManager.GetActiveScene().buildIndex == 5 && !fade2)
         {
-            audioSource.volume = Mathf.Lerp(20, 40, 0.002f);
+            audioSource.volume = Mathf.Lerp(0.3f, 0.6f, 0.1f);
+            fade2 = true;
         }
-        else if (SceneManager.GetActiveScene().buildIndex + 1 == 6)
+        else if (SceneManager.GetActiveScene().buildIndex == 6 && !fade3)
         {
-            audioSource.volume = Mathf.Lerp(40, 60, 0.002f);
+            audioSource.volume = Mathf.Lerp(0.6f, 0.9f, 0.1f);
+
+            fade3 = true;
         }
-        animator.SetTrigger("Start");        
     }
 
 }
